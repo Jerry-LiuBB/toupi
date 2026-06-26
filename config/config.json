@@ -1,0 +1,45 @@
+{
+    "robot": {
+        "ip": "192.168.1.18",
+        "port": 8080,
+        "timeout": 30,
+        "move_command": "movej",
+        "velocity": 50,
+        "acceleration": 0,
+        "trajectory_connect": 0
+    },
+    "canon_camera": {
+        "exe_path": "CanonCameraControl/bin/Release/net8.0/CanonCameraControl.exe",
+        "config_path": "CanonCameraControl/config.json",
+        "timeout": 15
+    },
+    "realsense": {
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "depth_format": "tiff",
+        "align_depth_to_color": true
+    },
+    "trajectory": {
+        "file_path": "trajectories/trajectory.txt",
+        "angle_unit": "degree",
+        "angle_scale": 1000
+    },
+    "output": {
+        "base_path": "data",
+        "images_subdir": "images",
+        "logs_subdir": "logs",
+        "xml_filename": "scanangles.xml"
+    },
+    "system": {
+        "log_level": "INFO",
+        "retry_count": 3,
+        "retry_delay": 1.0
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": 9999,
+        "buffer_size": 4096,
+        "timeout": 300
+    }
+}
