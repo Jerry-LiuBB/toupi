@@ -1,0 +1,24 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# C# 构建产物
+CanonCameraControl/bin/
+CanonCameraControl/obj/
+*.user
+
+# 运行时输出与数据
+data/
+test_output/
+logs/
+*.log
+
+# 客户扫描数据(体积大, 非源码)
+土耳其头皮扫描项目传输文件/
+
+# IDE / 工具内部文件
+.trae/
+.vscode/
+.idea/
